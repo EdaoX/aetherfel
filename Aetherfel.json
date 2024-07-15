@@ -1757,6 +1757,186 @@
 				"charisma",
 				"constitution"
 			]
+		},
+		{
+			"name": "Flaming Specter",
+			"source": "Aetherfel",
+			"page": 279,
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 22,
+				"formula": "5d8"
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 50,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 1,
+			"dex": 14,
+			"con": 11,
+			"int": 10,
+			"wis": 10,
+			"cha": 11,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				"acid",
+				"cold",
+				"lightning",
+				"thunder",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"immune": [
+				"fire",
+				"necrotic",
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
+			"languages": [
+				"understands all languages it knew in life but can't speak"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Burning Incorporeal Movement",
+					"entries": [
+						"The specter can move through other creatures and objects as if they were {@quickref difficult terrain||3}. It takes 3 ({@damage 1d6}) force damage if it ends its turn inside an object.",
+						"The specter can move through a space as narrow as 1 inch wide without squeezing. A creature that touches the specter or hits it with a melee attack while within 5 feet of it takes 3 ({@damage 1d6}) fire damage. In addition, the specter can enter a hostile creature's space and stop there. The first time it enters a creature's space on a turn, that creature takes 3 ({@damage 1d6}) fire damage and catches fire; until someone takes an action to douse the fire, the creature takes 3 ({@damage 1d6}) fire damage at the start of each of its turns."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the specter has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Fiery Claws",
+					"entries": [
+						"{@atk ms} {@hit 4} to hit, reach 5 ft., one creature. {@h}9 ({@damage 2d8}) fire damage. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 3 ({@damage 1d6}) fire damage at the start of each of its turns."
+					]
+				}
+			],
+			"environment": [
+				"underdark",
+				"urban"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/specter.mp3"
+			},
+			"traitTags": [
+				"Incorporeal Movement",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"CS",
+				"LF"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Specter",
+				"source": "MM"
+			},
+			"fluff": {
+				"name": "Specter",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"A specter is the angry, unfettered spirit of a humanoid that has been prevented from passing to the afterlife. Specters no longer possess connections to who or what they were, yet are condemned to walk the world forever. Some are spawned when dark magic or the touch of a wraith rips a soul from a living body.",
+									{
+										"name": "Beyond Redemption",
+										"type": "entries",
+										"entries": [
+											"When a ghost's unfinished business is completed, it can rest at last. No such rest or redemption awaits a specter. It is doomed to the Material Plane, its only end the oblivion that comes with the destruction of its soul. Until then, it bears out its lonely life in forlorn places, carrying on forgotten through the ages of the world."
+										]
+									},
+									{
+										"name": "Undying Hatred",
+										"type": "entries",
+										"entries": [
+											"Living creatures remind the specter that life is beyond its grasp. The mere sight of the living overwhelms a specter with sorrow and wrath, which can be abated only by destroying said life. A specter kills quickly and mercilessly, for only by depriving others of life can it gain the slightest satisfaction. However, no matter how many lives it extinguishes, a specter always succumbs to its hatred and sorrow.",
+											{
+												"name": "Dwellers in Darkness",
+												"entries": [
+													"Sunlight represents a source of life that no specter can ever hope to douse, and it pains them. When night falls, they leave their final resting places in search of living creatures to slay, knowing that few weapons can harm them in return.",
+													"At the first light of dawn, they retreat back into the darkness, where they remain until night falls again."
+												],
+												"type": "entries"
+											}
+										]
+									},
+									{
+										"name": "Undead Nature",
+										"type": "entries",
+										"entries": [
+											"A specter doesn't require air, food, drink, or sleep."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Specter.webp"
+						}
+					}
+				]
+			},
+			"damageTags": [
+				"F",
+				"O"
+			]
 		}
 	],
 	"spell": [
