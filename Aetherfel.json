@@ -14,8 +14,8 @@
             }
         ],
         "dateAdded": "1721000060",
-        "dateLastModified": "1721057377",
-        "_dateLastModifiedHash": "db93439fd99e02d458217fb22147e2e4"
+        "dateLastModified": "1721659107",
+        "_dateLastModifiedHash": "215b6d7d1303d21991d59c93184328fd"
     },
     "monster": [
         {
@@ -2102,6 +2102,633 @@
             "miscTags": [
                 "RW",
                 "MW"
+            ]
+        },
+        {
+            "name": "Bugbear Spearman Zombie",
+            "source": "Aetherfel",
+            "page": 33,
+            "basicRules": true,
+            "size": [
+                "M"
+            ],
+            "type": {
+                "type": "undead",
+                "tags": [
+                    "goblinoid"
+                ]
+            },
+            "alignment": [
+                "C",
+                "E"
+            ],
+            "ac": [
+                {
+                    "ac": 16,
+                    "from": [
+                        "{@item hide armor|phb}",
+                        "{@item shield|phb}"
+                    ]
+                }
+            ],
+            "hp": {
+                "formula": "6d8 + 15",
+                "average": 42
+            },
+            "speed": {
+                "walk": 30
+            },
+            "str": 15,
+            "dex": 14,
+            "con": 13,
+            "int": 8,
+            "wis": 11,
+            "cha": 9,
+            "skill": {
+                "stealth": "+6",
+                "survival": "+2"
+            },
+            "senses": [
+                "darkvision 60 ft."
+            ],
+            "passive": 10,
+            "languages": [
+                "Common",
+                "Goblin"
+            ],
+            "cr": "1",
+            "trait": [
+                {
+                    "name": "Brute",
+                    "entries": [
+                        "A melee weapon deals one extra die of its damage when the bugbear hits with it (included in the attack)."
+                    ]
+                },
+                {
+                    "name": "Surprise Attack",
+                    "entries": [
+                        "If the bugbear surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 7 ({@dice 2d6}) damage from the attack."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Spear",
+                    "entries": [
+                        "{@atk mw} {@hit 4} to hit, reach 15 ft., one target. {@h}11 ({@damage 2d8 + 2}) piercing damage."
+                    ]
+                }
+            ],
+            "environment": [
+                "forest",
+                "grassland",
+                "underdark"
+            ],
+            "soundClip": {
+                "type": "external",
+                "url": "https:\/\/5e.tools\/audio\/bestiary\/bugbear.mp3"
+            },
+            "attachedItems": [
+                "spear|phb"
+            ],
+            "traitTags": [
+                "Brute"
+            ],
+            "senseTags": [
+                "D"
+            ],
+            "languageTags": [
+                "C",
+                "GO"
+            ],
+            "miscTags": [
+                "MW",
+                "RCH",
+                "MLW"
+            ],
+            "hasFluff": true,
+            "hasFluffImages": true,
+            "token": {
+                "name": "Bugbear",
+                "source": "MM"
+            },
+            "fluff": {
+                "name": "Bugbear",
+                "source": "MM",
+                "entries": [
+                    {
+                        "type": "entries",
+                        "entries": [
+                            {
+                                "type": "entries",
+                                "entries": [
+                                    "Bugbears are born for battle and mayhem. Surviving by raiding and hunting, they bully the weak and despise being bossed around, but their love of carnage means they will fight for powerful masters if bloodshed and treasure are assured.",
+                                    {
+                                        "name": "Goblinoids",
+                                        "type": "entries",
+                                        "entries": [
+                                            "Bugbears are often found in the company of their cousins, hobgoblins and goblins. Bugbears usually enslave goblins they encounter, and they bully hobgoblins into giving them gold and food in return for serving as scouts and shock troops. Even when paid, bugbears are at best unreliable allies, yet goblins and hobgoblins understand that no matter how much bugbears might drain a tribe of resources, these creatures are a potent force."
+                                        ]
+                                    },
+                                    {
+                                        "name": "Followers of Hruggek",
+                                        "type": "entries",
+                                        "entries": [
+                                            "Bugbears worship Hruggek, a lesser god who dwells on the plane of Acheron. In the absence of their goblinoid kin, bugbears form loose war bands, each one led by its fiercest member. Bugbears believe that when they die, their spirits have a chance to fight at Hruggek's side. They try to prove themselves worthy by defeating as many foes as possible."
+                                        ]
+                                    },
+                                    {
+                                        "name": "Venal Ambushers",
+                                        "type": "entries",
+                                        "entries": [
+                                            "Despite their intimidating builds, bugbears move with surprising stealth. They are fond of setting ambushes and flee when outmatched. They are dependable mercenaries as long as they are supplied food, drink, and treasure, but a bugbear forgets any bond when its life is on the line. A wounded member of a bugbear band might be left behind to help the rest of the band escape. Afterward, that bugbear might help pursuers track down its former companions if doing so saves its life."
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "internal",
+                            "path": "bestiary\/MM\/Bugbear.webp"
+                        },
+                        "credit": "Steve Prescott"
+                    }
+                ]
+            },
+            "reaction": [
+                {
+                    "name": "Polearm Master",
+                    "entries": [
+                        "While wielding a glaive, halberd, pike, quarterstaff, or spear, other creatures provoke an opportunity attack from the bugbear when they enter the reach he has with that weapon."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Polearm Master Rear Strike",
+                    "entries": [
+                        "{@atk mw} {@hit 4} to hit, reach 15 ft., one target. {@h}7({@damage 2d4 + 2}) bludgeoning damage."
+                    ]
+                }
+            ],
+            "conditionImmune": [
+                "exhaustion",
+                "frightened",
+                "poisoned"
+            ],
+            "immune": [
+                "poison"
+            ],
+            "resist": [
+                "necrotic"
+            ],
+            "damageTags": [
+                "P"
+            ]
+        },
+        {
+            "name": "Dwarf Warrior Zombie",
+            "source": "Aetherfel",
+            "page": 78,
+            "alignment": [
+                "C",
+                "E"
+            ],
+            "action": [
+                {
+                    "name": "Warhammer",
+                    "entries": [
+                        "{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d8 + 1}) bludgeoning damage, or 6 ({@damage 1d10 + 1}) bludgeoning damage if used with two hands."
+                    ]
+                },
+                {
+                    "name": "Tripping Attack (Recharge {@recharge 5}",
+                    "entries": [
+                        "The dwarf makes a melee attack with his warhammer. If the attack hits, the target has to succeed on a {@dc 13} Strength saving throw or be knocked {@condition prone}."
+                    ]
+                }
+            ],
+            "attachedItems": [
+                "warhammer|phb"
+            ],
+            "senseTags": [
+                "D"
+            ],
+            "languageTags": [
+                "X",
+                "D"
+            ],
+            "miscTags": [
+                "MW",
+                "MLW"
+            ],
+            "size": [
+                "M"
+            ],
+            "type": {
+                "type": "undead",
+                "tags": [
+                    {
+                        "tag": "dwarf",
+                        "prefix": "Mountain"
+                    }
+                ]
+            },
+            "ac": [
+                {
+                    "ac": 18,
+                    "from": [
+                        "{@item chain mail|phb} and {@item shield|phb}"
+                    ]
+                }
+            ],
+            "hp": {
+                "formula": "5d8 + 15",
+                "average": 37
+            },
+            "speed": {
+                "walk": 25
+            },
+            "str": 15,
+            "dex": 12,
+            "con": 16,
+            "int": 7,
+            "wis": 14,
+            "cha": 16,
+            "skill": {
+                "deception": "+5",
+                "persuasion": "+5",
+                "athletics": "+4"
+            },
+            "passive": 12,
+            "languages": [
+                "any two languages",
+                "Dwarvish"
+            ],
+            "cr": "1",
+            "reaction": [
+                {
+                    "name": "Parry",
+                    "entries": [
+                        "The noble adds 2 to its AC against one melee attack that would hit it. To do so, the noble must see the attacker and be wielding a melee weapon."
+                    ]
+                },
+                {
+                    "name": "Riposte",
+                    "entries": [
+                        "When a creature fails a melee attack roll against the dwarf, he can use his reaction to make a meleee attack with the equiped weapon against the attacker."
+                    ]
+                }
+            ],
+            "actionTags": [
+                "Parry"
+            ],
+            "senses": [
+                "darkvision 60 ft."
+            ],
+            "token": {
+                "name": "Shield Dwarf Noble",
+                "source": "SKT"
+            },
+            "immune": [
+                "poison"
+            ],
+            "conditionImmune": [
+                "exhaustion",
+                "frightened",
+                "poisoned"
+            ],
+            "resist": [
+                "poison"
+            ],
+            "conditionInflict": [
+                "prone"
+            ],
+            "damageTags": [
+                "B"
+            ],
+            "savingThrowForced": [
+                "strength"
+            ]
+        },
+        {
+            "name": "Dwarf Berserker Zombie",
+            "source": "Aetherfel",
+            "page": 344,
+            "basicRules": true,
+            "size": [
+                "M"
+            ],
+            "type": {
+                "type": "undead",
+                "tags": [
+                    "any race"
+                ]
+            },
+            "alignment": [
+                "C",
+                "E"
+            ],
+            "ac": [
+                {
+                    "ac": 13,
+                    "from": [
+                        "{@item hide armor|phb}"
+                    ]
+                }
+            ],
+            "hp": {
+                "formula": "7d8 + 21",
+                "average": 52
+            },
+            "speed": {
+                "walk": 30
+            },
+            "str": 16,
+            "dex": 12,
+            "con": 17,
+            "int": 9,
+            "wis": 11,
+            "cha": 9,
+            "passive": 10,
+            "languages": [
+                "any one language (usually Common)"
+            ],
+            "cr": "2",
+            "trait": [
+                {
+                    "name": "Reckless",
+                    "entries": [
+                        "At the start of its turn, the berserker can gain advantage on all melee weapon attack rolls during that turn, but attack rolls against it have advantage until the start of its next turn."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Greataxe",
+                    "entries": [
+                        "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d12 + 3}) slashing damage."
+                    ]
+                }
+            ],
+            "environment": [
+                "arctic",
+                "coastal",
+                "desert",
+                "forest",
+                "hill",
+                "mountain"
+            ],
+            "soundClip": {
+                "type": "external",
+                "url": "https:\/\/5e.tools\/audio\/bestiary\/berserker.mp3"
+            },
+            "attachedItems": [
+                "greataxe|phb"
+            ],
+            "traitTags": [
+                "Reckless"
+            ],
+            "languageTags": [
+                "C",
+                "X"
+            ],
+            "miscTags": [
+                "MW",
+                "MLW"
+            ],
+            "hasFluff": true,
+            "token": {
+                "name": "Berserker",
+                "source": "MM"
+            },
+            "fluff": {
+                "name": "Berserker",
+                "source": "MM",
+                "entries": [
+                    {
+                        "type": "entries",
+                        "entries": [
+                            {
+                                "type": "entries",
+                                "entries": [
+                                    "Hailing from uncivilized lands, unpredictable berserkers come together in war parties and seek conflict wherever they can find it."
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "resist": [
+                "necrotic"
+            ],
+            "immune": [
+                "poison"
+            ],
+            "conditionImmune": [
+                "exhaustion",
+                "frightened",
+                "poisoned"
+            ],
+            "damageTags": [
+                "S"
+            ]
+        },
+        {
+            "name": "Elven Archer Zombie",
+            "source": "Aetherfel",
+            "page": 49,
+            "size": [
+                "M"
+            ],
+            "type": "humanoid",
+            "alignment": [
+                "C",
+                "E"
+            ],
+            "ac": [
+                {
+                    "ac": 15,
+                    "from": [
+                        "{@item leather armor|PHB|leather armor}"
+                    ]
+                }
+            ],
+            "hp": {
+                "formula": "7d6 + 15",
+                "average": 39
+            },
+            "speed": {
+                "walk": 30
+            },
+            "str": 11,
+            "dex": 18,
+            "con": 16,
+            "int": 11,
+            "wis": 13,
+            "cha": 10,
+            "skill": {
+                "acrobatics": "+6",
+                "perception": "+5"
+            },
+            "passive": 15,
+            "languages": [
+                "any one language (usually Common)"
+            ],
+            "cr": "3",
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The archer makes two Shortsword or Longbow attacks."
+                    ]
+                },
+                {
+                    "name": "Shortsword",
+                    "entries": [
+                        "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 4}) piercing damage."
+                    ]
+                },
+                {
+                    "name": "Longbow",
+                    "entries": [
+                        "{@atk rw} {@hit 5} to hit, range 150\/600 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Archer's Eye (3\/Day)",
+                    "entries": [
+                        "Immediately after making an attack roll or a damage roll with a ranged weapon, the archer can roll a {@dice d8} and add the number rolled to the total."
+                    ]
+                }
+            ],
+            "environment": [
+                "forest",
+                "urban"
+            ],
+            "soundClip": {
+                "type": "external",
+                "url": "https:\/\/5e.tools\/audio\/bestiary\/archer.mp3"
+            },
+            "attachedItems": [
+                "longbow|phb",
+                "shortsword|phb"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "languageTags": [
+                "C",
+                "X"
+            ],
+            "miscTags": [
+                "MW",
+                "MLW",
+                "RW"
+            ],
+            "hasFluff": true,
+            "hasFluffImages": true,
+            "token": {
+                "name": "Archer",
+                "source": "MPMM"
+            },
+            "fluff": {
+                "name": "Archer",
+                "source": "MPMM",
+                "entries": [
+                    "Archers defend castles, hunt wild game on the fringes of civilization, serve as artillery in military units, and occasionally make good coin as brigands or caravan guards.",
+                    "Some renowned archers and groups of archers are known for the special fletching of their arrows. You may roll on the Archer Fletching table to determine the distinctive fletching used by an individual archer or a group of them.",
+                    {
+                        "caption": "Archer Fletching",
+                        "type": "table",
+                        "colLabels": [
+                            "d12",
+                            "Fletching"
+                        ],
+                        "colStyles": [
+                            "col-1 text-center",
+                            "col-11"
+                        ],
+                        "rows": [
+                            [
+                                "1",
+                                "Feathers from an owlbear's mane"
+                            ],
+                            [
+                                "2",
+                                "Cockatrice feathers"
+                            ],
+                            [
+                                "3",
+                                "Axe beak feathers"
+                            ],
+                            [
+                                "4",
+                                "Planetar feathers"
+                            ],
+                            [
+                                "5",
+                                "Couatl feathers"
+                            ],
+                            [
+                                "6",
+                                "Pegasus feathers"
+                            ],
+                            [
+                                "7",
+                                "Griffon feathers"
+                            ],
+                            [
+                                "8",
+                                "Vrock feathers"
+                            ],
+                            [
+                                "9",
+                                "Peryton feathers"
+                            ],
+                            [
+                                "10",
+                                "Dryad leaf vanes"
+                            ],
+                            [
+                                "11",
+                                "Drake scale vanes"
+                            ],
+                            [
+                                "12",
+                                "Stirge wing vanes"
+                            ]
+                        ]
+                    }
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "internal",
+                            "path": "bestiary\/MPMM\/Archer.webp"
+                        },
+                        "credit": "Francisco Miyara"
+                    }
+                ]
+            },
+            "immune": [
+                "poison"
+            ],
+            "conditionImmune": [
+                "exhaustion",
+                "frightened",
+                "poisoned"
+            ],
+            "damageTags": [
+                "P"
             ]
         }
     ],
