@@ -14,8 +14,8 @@
             }
         ],
         "dateAdded": "1721000060",
-        "dateLastModified": "1721659107",
-        "_dateLastModifiedHash": "215b6d7d1303d21991d59c93184328fd"
+        "dateLastModified": "1722450289",
+        "_dateLastModifiedHash": "652800d8101d2c7cb6d0f7c86c767786"
     },
     "monster": [
         {
@@ -2726,6 +2726,164 @@
                 "exhaustion",
                 "frightened",
                 "poisoned"
+            ],
+            "damageTags": [
+                "P"
+            ]
+        },
+        {
+            "name": "Fencer",
+            "source": "Aetherfel",
+            "page": 350,
+            "size": [
+                "M"
+            ],
+            "type": {
+                "type": "humanoid",
+                "tags": [
+                    "any race"
+                ]
+            },
+            "alignment": [
+                "A"
+            ],
+            "ac": [
+                {
+                    "ac": 15,
+                    "from": [
+                        "{@item leather armor|phb}"
+                    ]
+                }
+            ],
+            "hp": {
+                "formula": "6d8 + 12",
+                "average": 39
+            },
+            "speed": {
+                "walk": 30
+            },
+            "str": 10,
+            "dex": 18,
+            "con": 14,
+            "int": 10,
+            "wis": 12,
+            "cha": 12,
+            "skill": {
+                "athletics": "+2",
+                "perception": "+3",
+                "acrobatics": "+6",
+                "stealth": "+6",
+                "sleight of hand": "+6",
+                "performance": "+3"
+            },
+            "passive": 13,
+            "languages": [
+                "any one language (usually Common)"
+            ],
+            "cr": "3",
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The fencer makes two rapier attacks."
+                    ]
+                },
+                {
+                    "name": "Rapier",
+                    "entries": [
+                        "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) piercing damage"
+                    ]
+                }
+            ],
+            "environment": [
+                "arctic",
+                "coastal",
+                "forest",
+                "grassland",
+                "hill",
+                "mountain",
+                "underdark",
+                "urban"
+            ],
+            "soundClip": {
+                "type": "external",
+                "url": "https:\/\/5e.tools\/audio\/bestiary\/veteran.mp3"
+            },
+            "attachedItems": [
+                "rapier|phb"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "languageTags": [
+                "C",
+                "X"
+            ],
+            "miscTags": [
+                "MW",
+                "MLW"
+            ],
+            "hasFluff": true,
+            "token": {
+                "name": "Veteran",
+                "source": "MM"
+            },
+            "fluff": {
+                "name": "Veteran",
+                "source": "MM",
+                "entries": [
+                    {
+                        "type": "entries",
+                        "entries": [
+                            {
+                                "type": "entries",
+                                "entries": [
+                                    "Veterans are professional fighters that take up arms for pay or to protect something they believe in or value. Their ranks include soldiers retired from long service and warriors who never served anyone but themselves."
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "save": {
+                "dex": "+6",
+                "cha": "+3"
+            },
+            "trait": [
+                {
+                    "name": "Fighting Ready",
+                    "entries": [
+                        "The fencer gains a +5 bonus to initiative. When rolling for initiative, the fencer can immediately take the Defensive Stance or the Aggressive Stance bonus action. He can choose to  do so before or after rolling the dice."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Defensive Stance",
+                    "entries": [
+                        "The fencer takes on a defensive stance. While in this stance, he gains a +3 bonus to his CA and can use his Riposte reaction, but can't use his multiattack. This stance lasts until the end of combat or when another stance is taken."
+                    ]
+                },
+                {
+                    "name": "Aggressive Stance",
+                    "entries": [
+                        "The fencer takes on an attacking stance. While in this stance, his Rapier attack deals 3 extra damage, and he can use his Fleet Footwork reaction. This stance lasts until the end of combat or when another stance is taken."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Riposte",
+                    "entries": [
+                        "When a melee attack misses the fencer, he can use his reaction to immediately make a Rapier attack against the attacker. This reaction can only be used when the fencer is in his defensive stance."
+                    ]
+                },
+                {
+                    "name": "Fleet Footwork",
+                    "entries": [
+                        "When an enemy gets within 5ft of the fencer, he can use his reaction to move up to half his speed in any direction without provoking attacks of opportunity. This reaction can only be used when the fencer is in his aggressive stance."
+                    ]
+                }
             ],
             "damageTags": [
                 "P"
