@@ -14,8 +14,8 @@
             }
         ],
         "dateAdded": "1721000060",
-        "dateLastModified": "1722450289",
-        "_dateLastModifiedHash": "652800d8101d2c7cb6d0f7c86c767786"
+        "dateLastModified": "1726495128",
+        "_dateLastModifiedHash": "03195b43ee4e5ff895f22f1a919a96af"
     },
     "monster": [
         {
@@ -2886,6 +2886,189 @@
                 }
             ],
             "damageTags": [
+                "P"
+            ]
+        },
+        {
+            "name": "Tyshidron",
+            "source": "Aetherfel",
+            "page": 190,
+            "basicRules": true,
+            "size": [
+                "L"
+            ],
+            "type": "monstrosity",
+            "alignment": [
+                "U"
+            ],
+            "ac": [
+                {
+                    "ac": 15,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "formula": "9d12 + 27",
+                "average": 85
+            },
+            "speed": {
+                "walk": 20,
+                "swim": 30
+            },
+            "str": 18,
+            "dex": 10,
+            "con": 17,
+            "int": 4,
+            "wis": 14,
+            "cha": 7,
+            "skill": {
+                "perception": "+5",
+                "athletics": "+7"
+            },
+            "senses": [
+                "darkvision 60 ft."
+            ],
+            "passive": 15,
+            "cr": "6",
+            "trait": [
+                {
+                    "name": "Hold Breath",
+                    "entries": [
+                        "The hydra can hold its breath for 1 hour."
+                    ]
+                },
+                {
+                    "name": "Multiple Heads",
+                    "entries": [
+                        "The tyshidron has three headsheads. While it has more than one head, the tyshidron has advantage on saving throws against being {@condition blinded}, {@condition charmed}, {@condition deafened}, {@condition frightened}, {@condition stunned}, and knocked {@condition unconscious}.",
+                        "Whenever the tyshidron takes 15 or more damage in a single turn, one of its heads dies. If all its heads die, the tyshidron dies.",
+                        "At the end of its turn, it grows one head for each of its heads that died since its last turn, unless it has taken fire damage since its last turn. The tyshidron regains 10 hit points for each head regrown in this way."
+                    ]
+                },
+                {
+                    "name": "Reactive Heads",
+                    "entries": [
+                        "For each head the tyshidron has beyond one, it gets an extra reaction that can be used only for opportunity attacks."
+                    ]
+                },
+                {
+                    "name": "Wakeful",
+                    "entries": [
+                        "While the tyshidron sleeps, at least one of its heads is awake."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The tyshidron makes as many petrifing bite attacks as it has heads."
+                    ]
+                },
+                {
+                    "name": "Petrifing Bite",
+                    "entries": [
+                        "{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}14 ({@damage 1d12 + 8}) piercing damage, plus 13 ({@damage 2d8 + 4}) poison damage. The target makes a Constitution saving throw ({@dc 11}). On a failure, it is {@condition restrained}. If the creature was already {@condition restrained} and failed the saving throw, it is instead {@condition petrified}. A creature {@condition restrained} by this effect can repeat it at the end of its turn to end it.",
+                        "The petrification caused by this effect can't be removed by any mean short of the spell {@spell Wish} or a Anti petrification potion made froma tyshidron's poison."
+                    ]
+                }
+            ],
+            "environment": [
+                "swamp"
+            ],
+            "soundClip": {
+                "type": "external",
+                "url": "https:\/\/5e.tools\/audio\/bestiary\/hydra.mp3"
+            },
+            "traitTags": [
+                "Hold Breath"
+            ],
+            "senseTags": [
+                "D"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "hasFluff": true,
+            "hasFluffImages": true,
+            "token": {
+                "name": "Hydra",
+                "source": "MM"
+            },
+            "fluff": {
+                "name": "Hydra",
+                "source": "MM",
+                "entries": [
+                    {
+                        "type": "entries",
+                        "entries": [
+                            {
+                                "type": "entries",
+                                "entries": [
+                                    "The hydra is a reptilian horror with a crocodilian body and multiple heads on long, serpentine necks. Although its heads can be severed, the hydra magically regrows them in short order. A typical specimen has five heads. At the dawn of time, Tiamat, the Queen of Evil Dragons, slew a rival dragon god named Lernaea and cast her blood across the multiverse. Each drop that fell upon a world spawned a multi-headed hydra consumed by a hunger as great as the fallen god's hatred. Great champions are known to test their mettle against these fearsome creatures.",
+                                    {
+                                        "name": "Everlasting Hunger",
+                                        "type": "entries",
+                                        "entries": [
+                                            "A rapacious and gluttonous monster, a hydra snatches and tears apart its prey in a frenzy of feeding. When a hydra has cleared a territory of food and driven off any creatures smart enough to avoid it, it moves on to seek its meals elsewhere. A hydra's hunger is so great that if it can't feed, it might turn against itself, its heads attacking each other as the creature eats itself alive."
+                                        ]
+                                    },
+                                    {
+                                        "name": "Hardy Water Dwellers",
+                                        "type": "entries",
+                                        "entries": [
+                                            "Hydras are natural swimmers, dwelling in rivers, along lakeshores, in ocean shallows, and in wetland bogs. A hydra rarely requires shelter from the elements, so it doesn't normally have a lair. Only in colder climes are hydras drawn to the protection of sheltered caverns and ruins. When a hydra sleeps, at least one of its heads remains awake and alert, making the creature difficult to catch by surprise."
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "internal",
+                            "path": "bestiary\/MM\/Hydra.webp"
+                        }
+                    }
+                ]
+            },
+            "save": {
+                "str": "+7",
+                "con": "+6"
+            },
+            "miscTags": [
+                "MW",
+                "RCH",
+                "RW"
+            ],
+            "legendary": [
+                {
+                    "name": "Charge",
+                    "entries": [
+                        "The tyshidron moves in a straight line up to double its speed without provoking attacks of opportunity, passing through the space of any creature smaller than its size. Any creature the the tyshidron moved through must succeed on a Strength saving throw or be knocked {@condition prone}."
+                    ]
+                },
+                {
+                    "name": "Poison Spit (Costs 2 actions)",
+                    "entries": [
+                        "{@atk rw} {@hit 5} to hit, reach 10 ft., one target. 13 ({@damage 2d8 + 4}) poison damage. The target makes a Constitution saving throw ({@dc 11}). On a failure, it is {@condition restrained}. If the creature was already {@condition restrained} and failed the saving throw, it is instead {@condition petrified}. A creature {@condition restrained} by this effect can repeat it at the end of its turn to end it.",
+                        "The petrification caused by this effect can't be removed by any mean short of the spell {@spell Wish} or a Anti petrification potion made froma tyshidron's poison."
+                    ]
+                }
+            ],
+            "legendaryHeader": [
+                "The tyshidron can take a number of legendary actions equal to the number of his heads, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The tyshidron regains spent legendary actions at the start of its turn, up to a number equal to the number of heads it has."
+            ],
+            "conditionInflict": [
+                "prone"
+            ],
+            "damageTags": [
+                "I",
                 "P"
             ]
         }
