@@ -14,8 +14,8 @@
             }
         ],
         "dateAdded": "1721000060",
-        "dateLastModified": "1727800974",
-        "_dateLastModifiedHash": "e9504ebfe6c463a12ac51abbb62bbb25"
+        "dateLastModified": "1728406326",
+        "_dateLastModifiedHash": "76ab565ef444085811141633a94b0636"
     },
     "monster": [
         {
@@ -3282,6 +3282,141 @@
             ],
             "savingThrowForced": [
                 "wisdom"
+            ]
+        },
+        {
+            "name": "Proto Tarrok",
+            "source": "Aetherfel",
+            "page": 324,
+            "size": [
+                "H"
+            ],
+            "type": "beast",
+            "alignment": [
+                "U"
+            ],
+            "ac": [
+                {
+                    "ac": 14,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "formula": "10d12 + 70",
+                "average": 135
+            },
+            "speed": {
+                "walk": 30,
+                "swim": 50
+            },
+            "str": 24,
+            "dex": 11,
+            "con": 15,
+            "int": 4,
+            "wis": 12,
+            "cha": 8,
+            "skill": {
+                "stealth": "+6",
+                "athletics": "+10",
+                "perception": "+4"
+            },
+            "passive": 14,
+            "cr": "7",
+            "trait": [
+                {
+                    "name": "Keen Smell",
+                    "entries": [
+                        "The proto tarrok has advantage on Wisdom (Perception) checks that rely on smell."
+                    ]
+                },
+                {
+                    "name": "Berserk Instinct",
+                    "entries": [
+                        "For every 50 hp the proto tarrok is missing, it gains an additional legendary action and it can take an additional reaction."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The proto tarrok makes three attacks: one with its bite and two with its claws."
+                    ]
+                },
+                {
+                    "name": "Bite",
+                    "entries": [
+                        "{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}23 ({@damage 3d10 + 7}) piercing damage, and the target is {@condition grappled} (escape {@dc 16}). Until this grapple ends, the target is {@condition restrained}, and the crocodile can't bite another target."
+                    ]
+                },
+                {
+                    "name": "Claw",
+                    "entries": [
+                        "{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}14 ({@damage 2d6 + 7}) slashing damage."
+                    ]
+                }
+            ],
+            "environment": [
+                "swamp"
+            ],
+            "soundClip": {
+                "type": "external",
+                "url": "https:\/\/5e.tools\/audio\/bestiary\/giant-crocodile.mp3"
+            },
+            "traitTags": [
+                "Hold Breath",
+                "Keen Senses"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "miscTags": [
+                "MW",
+                "RCH"
+            ],
+            "conditionInflict": [
+                "grappled",
+                "prone",
+                "restrained"
+            ],
+            "token": {
+                "name": "Giant Crocodile",
+                "source": "MM"
+            },
+            "save": {
+                "str": "+10",
+                "con": "+5"
+            },
+            "legendary": [
+                {
+                    "name": "Attack",
+                    "entries": [
+                        "The proto tarrok attacks using either its bite or claws."
+                    ]
+                },
+                {
+                    "name": "Raging Roar (Costs 2 actions)",
+                    "entries": [
+                        "All creatures within 9 meters of the tarrok must succeed on a Strength saving throw ({@dc 14}) or be knocked {@condition prone}. The proto tarrok can then move up to its speed without provoking attacks of opportunity"
+                    ]
+                }
+            ],
+            "legendaryHeader": [
+                "The proto tarrok can take 1 legendary action, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. The proto tarrok regains spent legendary actions at the start of its turn."
+            ],
+            "reaction": [
+                {
+                    "name": "Instinctive Strike",
+                    "entries": [
+                        "The proto tarrok can make an opportunity attack against creatures entering the reach of its attacks. If it does so, it can't take an opportunity attack this way against that target in this turn."
+                    ]
+                }
+            ],
+            "damageTags": [
+                "P",
+                "S"
             ]
         }
     ],
