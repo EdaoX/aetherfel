@@ -14,8 +14,8 @@
             }
         ],
         "dateAdded": "1721000060",
-        "dateLastModified": "1728406326",
-        "_dateLastModifiedHash": "76ab565ef444085811141633a94b0636"
+        "dateLastModified": "1731949044",
+        "_dateLastModifiedHash": "95fcba459d75ad74069c102be4e9615f"
     },
     "monster": [
         {
@@ -3417,6 +3417,117 @@
             "damageTags": [
                 "P",
                 "S"
+            ]
+        },
+        {
+            "name": "Guard of the Brotherhood of the Vestige",
+            "source": "Aetherfel",
+            "page": 347,
+            "size": [
+                "M"
+            ],
+            "type": {
+                "type": "humanoid",
+                "tags": [
+                    "any race"
+                ]
+            },
+            "alignment": [
+                "A"
+            ],
+            "ac": [
+                {
+                    "ac": 16,
+                    "from": [
+                        "{@item chain shirt|phb}",
+                        "{@item shield|phb}"
+                    ]
+                }
+            ],
+            "hp": {
+                "average": 11,
+                "formula": "2d8 + 2"
+            },
+            "speed": {
+                "walk": 30
+            },
+            "str": 11,
+            "dex": 15,
+            "con": 12,
+            "int": 8,
+            "wis": 13,
+            "cha": 10,
+            "skill": {
+                "perception": "+3"
+            },
+            "passive": 13,
+            "languages": [
+                "any one language (usually Common)"
+            ],
+            "cr": "1\/8",
+            "environment": [
+                "coastal",
+                "desert",
+                "forest",
+                "grassland",
+                "hill",
+                "mountain",
+                "urban"
+            ],
+            "soundClip": {
+                "type": "external",
+                "url": "https:\/\/5e.tools\/audio\/bestiary\/guard.mp3"
+            },
+            "attachedItems": [
+                "heavy crossbow|phb"
+            ],
+            "languageTags": [
+                "C",
+                "X"
+            ],
+            "hasFluff": true,
+            "token": {
+                "name": "Guard",
+                "source": "MM"
+            },
+            "fluff": {
+                "name": "Guard",
+                "source": "MM",
+                "entries": [
+                    {
+                        "type": "entries",
+                        "entries": [
+                            {
+                                "type": "entries",
+                                "entries": [
+                                    "Guards include members of a city watch, sentries in a citadel or fortified town, and the bodyguards of merchants and nobles."
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "action": [
+                {
+                    "name": "Heavy Crossbow",
+                    "entries": [
+                        "{@atk rw} {@hit 4} to hit, range 100\/400 ft., one target. {@h}6 ({@damage 1d10 + 2}) piercing damage."
+                    ]
+                },
+                {
+                    "name": "Short Sword",
+                    "entries": [
+                        "{@atk mw} {@hit 2} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d6}) piercing damage."
+                    ]
+                }
+            ],
+            "miscTags": [
+                "RW",
+                "RNG",
+                "MW"
+            ],
+            "damageTags": [
+                "P"
             ]
         }
     ],
