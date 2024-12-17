@@ -14,8 +14,8 @@
             }
         ],
         "dateAdded": "1721000060",
-        "dateLastModified": "1731949044",
-        "_dateLastModifiedHash": "95fcba459d75ad74069c102be4e9615f"
+        "dateLastModified": "1734459193",
+        "_dateLastModifiedHash": "dbe1fc2caa1f1a49a5b22921bc421f71"
     },
     "monster": [
         {
@@ -3528,6 +3528,161 @@
             ],
             "damageTags": [
                 "P"
+            ]
+        },
+        {
+            "name": "An'Donnor Steel Warrior",
+            "source": "Aetherfel",
+            "page": 276,
+            "size": [
+                "L"
+            ],
+            "type": {
+                "type": "construct",
+                "tags": [
+                    "Soldier"
+                ]
+            },
+            "alignment": [
+                "U"
+            ],
+            "ac": [
+                {
+                    "ac": 18,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "average": 104,
+                "formula": "11d10 + 44"
+            },
+            "speed": {
+                "walk": 30
+            },
+            "str": 21,
+            "dex": 10,
+            "con": 18,
+            "int": 7,
+            "wis": 12,
+            "cha": 3,
+            "save": {
+                "str": "+8",
+                "dex": "+3",
+                "con": "+7"
+            },
+            "skill": {
+                "athletics": "+8",
+                "perception": "+7"
+            },
+            "senses": [
+                "darkvision 120 ft."
+            ],
+            "passive": 17,
+            "resist": [
+                "psychic",
+                {
+                    "resist": [
+                        "bludgeoning",
+                        "piercing",
+                        "slashing"
+                    ],
+                    "note": "from mundane attacks",
+                    "cond": true
+                }
+            ],
+            "immune": [
+                "poison"
+            ],
+            "conditionImmune": [
+                "charmed",
+                "dazed|FleeMortals",
+                "exhaustion",
+                "frightened",
+                "paralyzed",
+                "petrified",
+                "poisoned"
+            ],
+            "languages": [
+                "Dwarvish"
+            ],
+            "cr": "8",
+            "trait": [
+                {
+                    "name": "Immutable Form",
+                    "entries": [
+                        "The Steel Warrior is immune to any power, spell, or effect that would alter their form."
+                    ]
+                },
+                {
+                    "name": "Supernatural Resistance",
+                    "entries": [
+                        "The Steel Warrior has advantage on saving throws against powers, spells, and other supernatural effects."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The Steel Warrior makes three attacks using Axe Arm, Repeating Crossbow, or both. If available, it can also use its Weave Surge."
+                    ]
+                },
+                {
+                    "name": "Axe Arm",
+                    "entries": [
+                        "{@atk mw} {@hit 8} to hit, reach 5 ft., one target. {@h}18 ({@damage 2d12 + 5}) slashing damage. If the target is wielding at least one weapon, they must make a {@dc 16} Strength saving throw. On a failed save, the target drops one weapon they wield of the Steel Warrior's choice, and the Steel Warrior kicks it up to 15 feet away."
+                    ]
+                },
+                {
+                    "name": "Repeating Crossbow",
+                    "entries": [
+                        "{@atk rw} {@hit 3} to hit, range 80\/320 ft., one target. {@h}16 ({@damage 3d10}) piercing damage."
+                    ]
+                },
+                {
+                    "name": "Weave Surge {@recharge 5}",
+                    "entries": [
+                        "Until the end of its next turn, the golem magically gains a +2 bonus to its AC, has advantage on Dexterity saving throws, and can use its slam attack as a bonus action. The Steel Warrior automatically recharges if there are at least two weave crystals within 30 feets of it."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Weave Cloak",
+                    "entries": [
+                        "When an attack hits the Steel Warrior, it can force the attacker to reroll the attack, possibly causing it to miss."
+                    ]
+                }
+            ],
+            "traitTags": [
+                "Immutable Form"
+            ],
+            "senseTags": [
+                "SD"
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "languageTags": [
+                "D"
+            ],
+            "miscTags": [
+                "MW",
+                "RW"
+            ],
+            "tokenHref": {
+                "type": "external",
+                "url": "https:\/\/raw.githubusercontent.com\/TheGiddyLimit\/homebrew\/master\/_img\/FleeMortals\/token\/Multivok Bodyguard.png"
+            },
+            "foundryTokenScale": 1.5,
+            "damageTags": [
+                "P",
+                "S"
+            ],
+            "savingThrowForced": [
+                "strength"
             ]
         }
     ],
