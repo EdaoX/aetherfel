@@ -14,8 +14,8 @@
             }
         ],
         "dateAdded": "1721000060",
-        "dateLastModified": "1734459193",
-        "_dateLastModifiedHash": "dbe1fc2caa1f1a49a5b22921bc421f71"
+        "dateLastModified": "1739211136",
+        "_dateLastModifiedHash": "b4d8291ba9a8e03f1b553824ae120fc9"
     },
     "monster": [
         {
@@ -3683,6 +3683,363 @@
             ],
             "savingThrowForced": [
                 "strength"
+            ]
+        },
+        {
+            "name": "An'Donnor Defender",
+            "source": "Aetherfel",
+            "page": 181,
+            "size": [
+                "H"
+            ],
+            "type": "construct",
+            "alignment": [
+                "U"
+            ],
+            "ac": [
+                {
+                    "ac": 17,
+                    "from": [
+                        "Corroded Armor Plates"
+                    ]
+                }
+            ],
+            "hp": {
+                "formula": "16d10 + 80",
+                "average": 168
+            },
+            "speed": {
+                "walk": 30
+            },
+            "initiative": {
+                "proficiency": 2
+            },
+            "str": 22,
+            "dex": 9,
+            "con": 20,
+            "int": 3,
+            "wis": 11,
+            "cha": 1,
+            "senses": [
+                "darkvision 120 ft."
+            ],
+            "passive": 13,
+            "immune": [
+                "fire",
+                "poison",
+                "psychic"
+            ],
+            "conditionImmune": [
+                "charmed",
+                "exhaustion",
+                "frightened",
+                "paralyzed",
+                "petrified",
+                "poisoned"
+            ],
+            "languages": [
+                "understands Common plus two other languages but can't speak"
+            ],
+            "cr": "8",
+            "trait": [
+                {
+                    "name": "Immutable Form",
+                    "entries": [
+                        "The golem can't shape-shift."
+                    ]
+                },
+                {
+                    "name": "Unstable Vials",
+                    "entries": [
+                        "Whenever a vial is broken, each creature in a 10ft radius must make a Dexterity saving throw ({@dc 14}). On failure, they take 13 {@damage 3d8} necrotic damage."
+                    ]
+                },
+                {
+                    "name": "Necrotic Myst",
+                    "entries": [
+                        "When all vials are destroyed, a necrotic myst surrounds the defender up to 15ft from him. Any creature that end their turn within the myst take {@damage 1d8} necrotic damage."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The defender makes tree Corroded Fist attacks. The defender can choose to substitute one attack with Magnetic Overload, provided it still has uses."
+                    ]
+                },
+                {
+                    "name": "Corroded Fist",
+                    "entries": [
+                        "{@atkr m} {@hit 8}, reach 10 ft. {@h}16 ({@damage 2d10 + 5}) Bludgeoning."
+                    ]
+                },
+                {
+                    "name": "Magnetic Overload (3\/Day)",
+                    "entries": [
+                        "The golem emits a magnetic pulse in a 30-ft. cone. Creatures must succeed on a {@dc 14} Strength saving throw or be pulled 15 ft. toward the golem and take 14 ({@damage 4d6}) lightning damage."
+                    ]
+                }
+            ],
+            "environment": [
+                "any"
+            ],
+            "treasure": [
+                "any"
+            ],
+            "token": {
+                "name": "Iron Golem",
+                "source": "MM"
+            },
+            "soundClip": {
+                "type": "external",
+                "url": "https:\/\/5e.tools\/audio\/bestiary\/iron-golem.mp3"
+            },
+            "traitTags": [
+                "Damage Absorption",
+                "Immutable Form",
+                "Magic Resistance"
+            ],
+            "senseTags": [
+                "SD"
+            ],
+            "actionTags": [
+                "Breath Weapon",
+                "Multiattack"
+            ],
+            "languageTags": [
+                "C",
+                "CS",
+                "X"
+            ],
+            "miscTags": [
+                "MA",
+                "RCH"
+            ],
+            "hasFluff": true,
+            "hasFluffImages": true,
+            "fluff": {
+                "entries": [
+                    {
+                        "type": "section",
+                        "name": "An'Donnor Defender",
+                        "entries": [
+                            "{@i Guardian of That Which Must Endure}",
+                            {
+                                "type": "list",
+                                "style": "list-hang-notitle",
+                                "items": [
+                                    {
+                                        "type": "item",
+                                        "name": "Habitat:",
+                                        "entry": "{@filter Any|bestiary|environment=any}"
+                                    },
+                                    {
+                                        "type": "item",
+                                        "name": "Treasure:",
+                                        "entry": "Any"
+                                    }
+                                ]
+                            },
+                            ""
+                        ]
+                    }
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https:\/\/5e.tools\/img\/bestiary\/XMM\/Iron Golem.webp"
+                        }
+                    }
+                ]
+            },
+            "save": {
+                "str": "+9",
+                "con": "+8"
+            },
+            "skill": {
+                "athletics": "+9",
+                "perception": "+3"
+            },
+            "resist": [
+                {
+                    "resist": [
+                        "bludgeoning",
+                        "piercing",
+                        "slashing"
+                    ],
+                    "note": "from non-magical attacks",
+                    "cond": true
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Ruined Obliteration Beam",
+                    "entries": [
+                        "This attacks takes three bonus actions to use, and can only be used if at least one vial remains intact. ",
+                        "- On first use, long glass vials sprout from the defenders elbows and knees and start filling with dark liquid. ",
+                        "- On second use, the vials fill completely and the liquid starts to boild. ",
+                        "-On third use, the beam shoots from the defender's chest. When this happens, it releases a 60-ft. line, 5 ft. wide. Each creature in the line must make a {@dc 15} Dexterity saving throw, taking 13 ({@damage 3d8}) necrotic damage per remaining vial on a failed save, or half as much on a success. The damage is maxed against bearers of Spes shards, and the healing properties of the artifact are hindered for one minute.",
+                        "While the vials are out, they are targetable. The each have AC 13 and 30 HP, and they are immune to all ailments and to poison and psychic damage, but vulnerable to thunder damage."
+                    ]
+                }
+            ],
+            "legendary": [
+                {
+                    "name": "Detatch Plates",
+                    "entries": [
+                        "The golem summons up to three {@creature Flying Corroded Plate}. For each summoned plate, its AC drops by one. Any time a Flying Corroded Plate summoned this way is destroyed, the AC rises by 1."
+                    ]
+                },
+                {
+                    "name": "Slamming Jump",
+                    "entries": [
+                        "The defender jumps up to his speed in any straight direction. It then makes one Corroded Fist attack. If this attack hits, the target is also knocked {@condition prone}."
+                    ]
+                },
+                {
+                    "name": "Corroded Barrier (Costs 2 Actions)",
+                    "entries": [
+                        "The defender gains +2 AC until the start of its next turn"
+                    ]
+                }
+            ],
+            "conditionInflict": [
+                "prone"
+            ],
+            "damageTags": [
+                "L",
+                "N"
+            ],
+            "savingThrowForced": [
+                "dexterity",
+                "strength"
+            ]
+        },
+        {
+            "name": "Flying Corroded Plate",
+            "size": [
+                "M"
+            ],
+            "type": {
+                "type": "construct",
+                "swarmSize": "T"
+            },
+            "source": "Aetherfel",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                13
+            ],
+            "hp": {
+                "special": "5"
+            },
+            "speed": {
+                "walk": 0,
+                "fly": 40,
+                "swim": 20
+            },
+            "str": 12,
+            "dex": 14,
+            "con": 11,
+            "int": 1,
+            "wis": 11,
+            "cha": 1,
+            "passive": 10,
+            "cr": "3",
+            "fluff": {
+                "entries": [
+                    "BOTTLED ARMADA",
+                    "An armada of tiny ships, each one secure in a glass bottle the size of a boot, rallies together and floats through the air as though sailing on the tide of some arcane force. Each ship is crewed by a group of tiny sailors, and the ships move as one to attack.",
+                    "Animated Works of Art. Every singular ship in a bottle signifies an immense level of patience and dedication. The average craftsman might spend weeks carefully constructing the ship by moving each individual piece through the opening in the bottle until eventually, the final product is created. Many of these creations are made by sea captains who take the time to craft a replica of their own vessel. In most cases where the ship in a bottle becomes an animated construct, it is because a wayward water spirit has taken up residence in the tiny work of art. Depending on the nature of that water spirit, it may become aggressive with other creatures, believing that they are intruding on its territory by travelling the open sea, or it may become curious and choose to follow the ship's creator around.",
+                    "Formation of an Armada. When multiple ships in bottles are gathered together, they will instinctively pool the spiritual energy used to animate the ships themselves and for a cohesive fleet of animated objects. Once an armada is formed the individual water spirits animating each individual ship become nigh inseparable and will operate with singular purpose. In battle, the ships will fight using naval tactics in order to take down any threat they come across.",
+                    "Tiny Crews. Each water spirit that takes up residency in a bottled ship expresses its personality through extremely small humanoid creatures that \"crew\" the ship. These little cremates are all part of the same water spirit, however, they often appear to have their own little personalities and will interact with one another as if they were a proper ship's crew.",
+                    "Commissioned Curiosities. On occasion an animated ship in a bottle might be created on purpose by a skilled craftsman who is familiar with the magic used to summon elemental creatures. Such an individual might summon a water spirit from the Elemental Plane of Water to occupy the ship in a bottle, similar to how an elemental's spirit is used to give life to a golem. When a ship in a bottle is crafted in this way, it is entirely loyal to the craftsman (or an individual denoted by the craftsman) and will view them as though they were their admiral in command. While it is possible for someone to create an entire armada of loyal ships in bottles, this is a rare occurrence due to the exorbitant cost involved with creating so many animated ships.",
+                    "----------------------------------------------------------------------------------------",
+                    "Create Magic Item: Ship in a Bottle",
+                    "These are the steps you must follow if you want to create a ship in a bottle;",
+                    "First, you must have a mundane ship in a bottle ready to act as the creature's body. This can typically be purchased for 200 GP. Alternatively you can spend 5 gp on the materials and build it yourself over the course of a week of downtime by succeeding on a DC 18 Woodworking Tools (Dexterity) check.",
+                    "Then, over the course of one hour, you must cast the spells animate object, magic jar, and conjure elemental. If you already have the spirit of a water elemental in your possession (such as in an elemental gem) you do not need to cast conjure elemental.",
+                    "Once the final spell has been cast, the ship will become an animated ship in a bottle and will be fully loyal to one creature chosen by the individual casting the final spell.",
+                    "----------------------------------------------------------------------------------------"
+                ],
+                "images": [
+                    {
+                        "type": "image",
+                        "href": {
+                            "type": "external",
+                            "url": "https:\/\/i.imgur.com\/dLD4r7n.png"
+                        }
+                    }
+                ]
+            },
+            "tokenUrl": "https:\/\/i.imgur.com\/jGB4VKC.png",
+            "languages": [
+                "understands Aquan and Common",
+                "but does not speak"
+            ],
+            "languageTags": [
+                "AQ",
+                "C"
+            ],
+            "senses": [
+                "darkvision 60 ft."
+            ],
+            "senseTags": [
+                "D"
+            ],
+            "immune": [
+                "poison"
+            ],
+            "conditionImmune": [
+                "charmed",
+                "exhaustion",
+                "frightened",
+                "paralyzed",
+                "poisoned",
+                "prone",
+                "unconscious"
+            ],
+            "trait": [
+                {
+                    "name": "Flyby",
+                    "entries": [
+                        "The ship in a bottle doesn't provoke opportunity attacks when it flies out of an enemy's reach."
+                    ]
+                },
+                {
+                    "name": "Minion",
+                    "entries": [
+                        "If the guard takes damage from an attack or as the result of a failed saving throw, their hit points are reduced to 0. If the guard takes damage from another effect, they die if the damage equals or exceeds their hit point maximum; otherwise they take no damage."
+                    ]
+                }
+            ],
+            "traitTags": [
+                "Flyby"
+            ],
+            "miscTags": [
+                "MW"
+            ],
+            "action": [
+                {
+                    "name": "Cut",
+                    "entries": [
+                        "{@atk mw} {@hit 8} to hit, reach 5 ft., one creature.",
+                        "{@h}12 ({@damage 2d8 + 4}) slashing damage."
+                    ]
+                }
+            ],
+            "actionTags": [
+                "Multiattack"
+            ],
+            "skill": {
+                "acrobatics": "+4"
+            },
+            "damageTags": [
+                "S"
             ]
         }
     ],
