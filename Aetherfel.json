@@ -14,8 +14,8 @@
             }
         ],
         "dateAdded": "1721000060",
-        "dateLastModified": "1739211136",
-        "_dateLastModifiedHash": "b4d8291ba9a8e03f1b553824ae120fc9"
+        "dateLastModified": "1744575815",
+        "_dateLastModifiedHash": "54113abc59f6219e8f65e168fcf301e2"
     },
     "monster": [
         {
@@ -4040,6 +4040,240 @@
             },
             "damageTags": [
                 "S"
+            ]
+        },
+        {
+            "name": "Enchanted Armor Guardian",
+            "size": [
+                "M"
+            ],
+            "type": "construct",
+            "source": "Aetherfel",
+            "alignment": [
+                "N"
+            ],
+            "ac": [
+                {
+                    "special": "18 if made with Heavy Armor"
+                },
+                {
+                    "special": "15 if made with Medium Armor"
+                },
+                {
+                    "special": "13 if made with Light Armor"
+                },
+                {
+                    "special": "(+2 when using a shield)"
+                }
+            ],
+            "hp": {
+                "formula": "10d12 + 80",
+                "average": 145
+            },
+            "speed": {
+                "walk": 30,
+                "fly": {
+                    "number": 30,
+                    "condition": "when made with Medium Armor"
+                }
+            },
+            "str": 14,
+            "dex": 10,
+            "con": 18,
+            "int": 7,
+            "wis": 12,
+            "cha": 6,
+            "passive": 14,
+            "cr": "8",
+            "shortName": true,
+            "languages": [
+                "Common"
+            ],
+            "languageTags": [
+                "C"
+            ],
+            "save": {
+                "con": "+7"
+            },
+            "skill": {
+                "athletics": "+5",
+                "perception": "+4",
+                "intimidation": "+1"
+            },
+            "action": [
+                {
+                    "name": "Multiattack",
+                    "entries": [
+                        "The guardian makes two attacks with the weapon he is holding, or three if made using the Air core. If it was made using the dragon helm, it can replace one of the attacks with its Breath Weapon if it is available."
+                    ]
+                },
+                {
+                    "name": "Greatsword",
+                    "entries": [
+                        "{@atk mw} {@hit +5} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d6 + 2}) Slashing damage plus 10 ({@damage 3d6}) damage of the element of its core."
+                    ]
+                },
+                {
+                    "name": "Longsword",
+                    "entries": [
+                        "{@atk mw} {@hit +5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) Slashing damage plus 7 ({@damage 2d6}) damage of the element of its core."
+                    ]
+                },
+                {
+                    "name": "Longbow",
+                    "entries": [
+                        "{@atk rw} {@hit +5} to hit, range 150\/600 ft., one target. {@h}4 ({@damage 1d8 + 2}) Piercing damage plus 7 ({@damage 2d6}) damage of the element of its core."
+                    ]
+                },
+                {
+                    "name": "Dagger",
+                    "entries": [
+                        "{@atk mw,rw} {@hit +5} to hit, reach 5 ft. or range 20\/60 ft., one target. {@h}6 ({@damage 1d4 + 2}) Piercing damage plus 2 ({@damage 1d4}) damage of the element of its core."
+                    ]
+                },
+                {
+                    "name": "Breath Weapon (Dragon helm only) {@recharge 5}",
+                    "entries": [
+                        "The Enchanted Armor Guardian exhales a 25-foot cone of the element associated with its core. Each creature in that area must make a {@dc 15} Dexterity saving throw, taking 18 ({@damage 4d8}) damage of the tipe associated with the guardians core in case of failure or only half in case of success."
+                    ]
+                }
+            ],
+            "actionTags": [
+                "Breath Weapon",
+                "Multiattack"
+            ],
+            "miscTags": [
+                "MW",
+                "MLW",
+                "RW",
+                "RNG",
+                "THW",
+                "AOE"
+            ],
+            "attachedItems": [
+                "dagger|phb",
+                "greatsword|phb",
+                "longbow|phb",
+                "longsword|phb"
+            ],
+            "bonus": [
+                {
+                    "name": "Dagger Attack (Daggers only)",
+                    "entries": [
+                        "The guardian attacks using his dagger."
+                    ]
+                },
+                {
+                    "name": "Cunning Action (Light armor only)",
+                    "entries": [
+                        "The guardian can take the disengage, dash or hide actions as a bonus action."
+                    ]
+                },
+                {
+                    "name": "Blink Step (Star helm only)",
+                    "entries": [
+                        "The guardian can magically teleport up to 30ft in an unoccupied space it can see."
+                    ]
+                },
+                {
+                    "name": "Shield Slame (Sword and Shield only)",
+                    "entries": [
+                        "The guardian targets a creature within 5ft. The creature has to succeed on a {@dc 15} Strength saving throw or be knocked {@condition prone}."
+                    ]
+                }
+            ],
+            "trait": [
+                {
+                    "name": "Charge (Bull helm only)",
+                    "entries": [
+                        "If the Enchanted Armor Guardian moves at least 15 feet straight toward a target and then hits it with its weapon on the same turn, the target takes an extra 7 ({@damage 2d6}) slashing damage. If the target is a creature, it must succeed on a {@dc 15} Strength saving throw or be knocked {@condition prone}."
+                    ]
+                },
+                {
+                    "name": "Sneak Attack (Daggers only)",
+                    "entries": [
+                        "Once per turn, the Enchanted Armor Guardian deals an extra 10 ({@damage 3d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the Enchanted Armor Guardian that isn't {@condition incapacitated} and the Enchanted Armor Guardian doesn't have disadvantage on the attack roll."
+                    ]
+                },
+                {
+                    "name": "Close-Combat Archer (Bow only)",
+                    "entries": [
+                        "The guardian doesn't suffer from disadvantage when using a ranged weapon while engaged."
+                    ]
+                },
+                {
+                    "name": "Core: Fire",
+                    "entries": [
+                        "When made with the Fire core, the guardian's attacks engulf their targets in flames. A creature engulfed in flames takes {@damage 1d4} damage at the start of their turn. This effect stacks up to three times. A creature can use their action to stop this effect on itself or a creature within 5ft."
+                    ]
+                },
+                {
+                    "name": "Core: Water",
+                    "entries": [
+                        "When made with the Water core, the guardian's attacks slow their targets' movement. A creature slowed this way has all of its speeds halved until the end of their next turn."
+                    ]
+                },
+                {
+                    "name": "Core: Air",
+                    "entries": [
+                        "When made with the Air core, the guardian can make an extra weapon attack with its multiattack."
+                    ]
+                },
+                {
+                    "name": "Core: Earth",
+                    "entries": [
+                        "When made with the Earth core, when the guardian is targeted by an attack it can use it's reaction to force the attacker to do so with disadvantage."
+                    ]
+                }
+            ],
+            "conditionInflict": [
+                "prone"
+            ],
+            "traitTags": [
+                "Charge",
+                "Sneak Attack"
+            ],
+            "immune": [
+                {
+                    "immune": [
+                        "fire"
+                    ],
+                    "note": "when made with the Fire Core"
+                },
+                {
+                    "immune": [
+                        "bludgeoning"
+                    ],
+                    "note": "when made with the Earth Core"
+                },
+                {
+                    "immune": [
+                        "lightning"
+                    ],
+                    "note": "when made with the Air Core"
+                },
+                {
+                    "immune": [
+                        "cold"
+                    ],
+                    "note": "when made with the Water Core"
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Earthen Protection (Earth Core only)",
+                    "entries": [
+                        "When the guardian is targeted by an attack it can use it's reaction to force the attacker to do so with disadvantage."
+                    ]
+                }
+            ],
+            "damageTags": [
+                "P",
+                "S"
+            ],
+            "savingThrowForced": [
+                "dexterity",
+                "strength"
             ]
         }
     ],
