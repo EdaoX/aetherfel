@@ -14,8 +14,8 @@
             }
         ],
         "dateAdded": "1721000060",
-        "dateLastModified": "1744575815",
-        "_dateLastModifiedHash": "54113abc59f6219e8f65e168fcf301e2"
+        "dateLastModified": "1782770231",
+        "_dateLastModifiedHash": "a18e600dfdc4f35f2f61a00827ffada5"
     },
     "monster": [
         {
@@ -4275,6 +4275,149 @@
                 "dexterity",
                 "strength"
             ]
+        },
+        {
+            "name": "Capitano M'gar",
+            "source": "DunForge",
+            "size": [
+                "L"
+            ],
+            "type": {
+                "type": "mostruosit\u00e0",
+                "tags": [
+                    "minotauro"
+                ]
+            },
+            "cr": "6",
+            "alignment": [
+                "L",
+                "E"
+            ],
+            "ac": [
+                {
+                    "ac": 15,
+                    "from": [
+                        "Mezza Armatura"
+                    ]
+                }
+            ],
+            "hp": {
+                "average": 136,
+                "formula": "16d10 + 48"
+            },
+            "speed": {
+                "walk": 40
+            },
+            "str": 18,
+            "dex": 12,
+            "con": 16,
+            "int": 14,
+            "wis": 16,
+            "cha": 12,
+            "save": {
+                "con": "+6",
+                "wis": "+6"
+            },
+            "skill": {
+                "athletics": "+7",
+                "insight": "+9",
+                "intimidation": "+4",
+                "investigation": "+5",
+                "perception": "+6"
+            },
+            "senses": [
+                "darkvision 60 ft."
+            ],
+            "passive": 16,
+            "languages": [
+                "Common",
+                "Abyssal",
+                "Infernal",
+                "Telepatia 18m"
+            ],
+            "trait": [
+                {
+                    "name": "Aura della Casa (Il Banco Vince Sempre)",
+                    "entries": [
+                        "I nemici entro 9 metri da M'gar sono soggetti all'Aura della Casa. Quando un nemico di M'Gar manca un bersaglio con un tiro per colpire, M'Gar sceglie un suo alleato all'interno di quell'aura, che pu\u00f2 spostarsi di met\u00e0 del suo movimento."
+                    ]
+                },
+                {
+                    "name": "Magia del Patto di Kevriamor",
+                    "entries": [
+                        "M'gar \u00e8 un incantatore innato il cui potere deriva dal suo patrono diavolo (caratteristica da incantatore: Saggezza, CD tiri salvezza 14, {@hit 6} al tiro per colpire con gli incantesimi). Ha 2 slot incantesimo di 3\u00b0 livello, che recupera al termine di un riposo breve o lungo. Conosce i seguenti incantesimi: Mano Magica ({@condition invisible||Invisibile}), Comando, Silenzio, Zona di Verit\u00e0, Lentezza, Cecit\u00e0\/Sordit\u00e0."
+                    ]
+                },
+                {
+                    "name": "Carica Inquisitoria",
+                    "entries": [
+                        "Se M'gar si muove di almeno 6 metri in linea retta verso un bersaglio e poi lo colpisce con un attacco con le Corna nello stesso turno, il bersaglio subisce 9 ({@damage 2d8}) danni perforanti extra. Se il bersaglio \u00e8 una creatura, deve riuscire un tiro salvezza su Forza con {@dc 15} o finire {@condition prone||Prono}."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattacco",
+                    "entries": [
+                        "M'gar effettua due attacchi con i Guantoni dell'Estorsione e un attacco con le Corna. Se \u00e8 carica, pu\u00f2 usare Rivelazione Devastante."
+                    ]
+                },
+                {
+                    "name": "Guantoni dell'Estorsione",
+                    "entries": [
+                        "Attacco con Arma da Mischia: {@hit 7} al tiro per colpire, portata 1,5 m, un bersaglio. Colpisce: 8 ({@damage 1d8 + 4}) danni contundenti pi\u00f9 4 ({@damage 1d8}) danni psichici. Se il bersaglio si sta concentrando su un incantesimo, subisce svantaggio al tiro salvezza su Costituzione per mantenere la concentrazione."
+                    ]
+                },
+                {
+                    "name": "Corna",
+                    "entries": [
+                        "Attacco con Arma da Mischia: {@hit 7} al tiro per colpire, portata 1,5 m, un bersaglio. Colpisce: 10 ({@damage 1d12 + 4}) danni perforanti."
+                    ]
+                },
+                {
+                    "name": "Rivelazione Devastante {@recharge 6}",
+                    "entries": [
+                        "M'gar attinge ai segreti compromettenti del casin\u00f2 per distruggere le menti avversarie. M'gar proietta telepaticamente frammenti di verit\u00e0 scomode in un raggio di 9 metri. Ogni creatura nell'area deve effettuare un tiro salvezza su Intelligenza con {@dc 14}. Se fallisce, subisce 5 ({@damage 1d10}) danni psichici ed \u00e8 {@condition blinded||Accecata} fino alla fine del turno successivo di M'gar, poich\u00e9 il sovraccarico di informazioni le impedisce di elaborare la vista. Se supera il tiro salvezza, subisce la met\u00e0 dei danni e non \u00e8 {@condition blinded||accecata}."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Passo del Baro",
+                    "entries": [
+                        "M'gar si teletrasporta magicamente fino a 9 metri in uno spazio inoccupato che pu\u00f2 vedere, a condizione che termini il movimento adiacente a una creatura ostile. Il suo primo attacco in mischia contro quella creatura in questo turno ha vantaggio."
+                    ]
+                },
+                {
+                    "name": "Uppercut",
+                    "entries": [
+                        "Attacco con Arma da Mischia: {@hit 7} al tiro per colpire, portata 1,5 m, un bersaglio. Colpisce: 8 ({@damage 1d8 + 4}) pi\u00f9 4 ({@damage 1d8}) danni psichici. Il bersaglio deve effettuare un tiro salvezza su Costituzione con {@dc 15}. Se fallisce, durante il suo prossimo turno pu\u00f2 effettuare solo una tra le seguenti azioni: muoversi, usare la sua azione o usare l'azione bonus. Se sceglie di attaccare, il numero di attacchi \u00e8 limitato ad 1."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Enfasi del Comando",
+                    "entries": [
+                        "Quando una creatura si trova entro 1,5m da lui, M'Gar pu\u00f2 usare la sua reazione per donargli un dado Comando (d10). La creatura pu\u00f2 usare lanciare il dado comando quando effettua un tiro per colpire, un tiro salvezza o una prova abilit\u00e0,, prima di conoscere l'esisto. Il risultato del dado viene sommato a quello della prova."
+                    ]
+                }
+            ],
+            "fluff": {
+                "name": "Capitano M'gar",
+                "source": "DunForge",
+                "entries": [
+                    "M'gar non \u00e8 un semplice minotauro, ma l'imponente esecutore e capo della sicurezza del casin\u00f2 infernale di Kevriamor. Laddove la maggior parte dei minotauri cede alla furia sanguinaria, M'gar ha barattato la propria bestialit\u00e0 per la gelida lungimiranza di un mercante di segreti. I suoi occhi bruciano di fiamma blu, elaborando costantemente le probabilit\u00e0 e i debiti di ogni avventore. Quando la diplomazia e le sottili minacce non bastano a sedare i disordini ai tavoli da gioco, M'gar entra in azione con un'alabarda forgiata all'inferno, armato delle paure pi\u00f9 intime dei trasgressori.",
+                    {
+                        "type": "entries",
+                        "name": "Tattiche",
+                        "entries": [
+                            "M'gar \u00e8 un tattico brillante. Il suo obiettivo non \u00e8 uccidere indiscriminatamente, ma neutralizzare rapidamente chi bara, ruba informazioni o minaccia il casin\u00f2. Apre il combattimento isolando i casters avversari con l'incantesimo 'Silenzio' o compromettendo i combattenti in mischia con 'Lentezza'. Usa 'Passo del Baro' per aggirare le linee difensive nemiche e posizionarsi dove l'Aura della Casa pu\u00f2 negare il vantaggio al nemico. Riserva la reazione 'Scudo di Segreti' per i colpi critici o gli attacchi da parte di Ladri e Paladini (che infliggono alti danni singoli), costringendoli a colpire i propri alleati per generare caos. 'Rivelazione Devastante' viene usata per accecare i nemici tattici prima che M'gar si accanisca su di loro con gli attacchi in mischia."
+                        ]
+                    }
+                ]
+            },
+            "hasFluff": true
         }
     ],
     "spell": [
