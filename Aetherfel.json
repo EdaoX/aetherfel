@@ -14,8 +14,8 @@
             }
         ],
         "dateAdded": "1721000060",
-        "dateLastModified": "1782770231",
-        "_dateLastModifiedHash": "a18e600dfdc4f35f2f61a00827ffada5"
+        "dateLastModified": "1783962644",
+        "_dateLastModifiedHash": "53b995561510229d3017277127c78fa0"
     },
     "monster": [
         {
@@ -4413,6 +4413,338 @@
                         "name": "Tattiche",
                         "entries": [
                             "M'gar \u00e8 un tattico brillante. Il suo obiettivo non \u00e8 uccidere indiscriminatamente, ma neutralizzare rapidamente chi bara, ruba informazioni o minaccia il casin\u00f2. Apre il combattimento isolando i casters avversari con l'incantesimo 'Silenzio' o compromettendo i combattenti in mischia con 'Lentezza'. Usa 'Passo del Baro' per aggirare le linee difensive nemiche e posizionarsi dove l'Aura della Casa pu\u00f2 negare il vantaggio al nemico. Riserva la reazione 'Scudo di Segreti' per i colpi critici o gli attacchi da parte di Ladri e Paladini (che infliggono alti danni singoli), costringendoli a colpire i propri alleati per generare caos. 'Rivelazione Devastante' viene usata per accecare i nemici tattici prima che M'gar si accanisca su di loro con gli attacchi in mischia."
+                        ]
+                    }
+                ]
+            },
+            "hasFluff": true
+        },
+        {
+            "name": "Leopardo di Fiamme Soggiogato",
+            "source": "DunForge",
+            "size": [
+                "L"
+            ],
+            "type": {
+                "type": "fiend",
+                "tags": [
+                    "bestia"
+                ]
+            },
+            "cr": "5",
+            "alignment": [
+                "L",
+                "E"
+            ],
+            "ac": [
+                {
+                    "ac": 15,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "average": 110,
+                "formula": "13d10 + 39"
+            },
+            "speed": {
+                "walk": 50,
+                "climb": 40
+            },
+            "str": 18,
+            "dex": 16,
+            "con": 17,
+            "int": 6,
+            "wis": 14,
+            "cha": 11,
+            "save": {
+                "str": "+7",
+                "dex": "+6",
+                "con": "+6"
+            },
+            "skill": {
+                "athletics": "+7",
+                "intimidation": "+3",
+                "perception": "+5",
+                "stealth": "+9"
+            },
+            "vulnerable": [
+                "cold"
+            ],
+            "resist": [
+                "fisico da armi non magiche",
+                {
+                    "special": "Contundente, Perforante e Tagliente da attacchi non magici"
+                }
+            ],
+            "immune": [
+                "fire"
+            ],
+            "conditionImmune": [
+                "ammaliato",
+                "frightened",
+                {
+                    "special": "Immune a qualsiasi effetto che ne faccia perdere il controllo finch\u00e9 indossa il collare"
+                }
+            ],
+            "senses": [
+                "darkvision 60 ft."
+            ],
+            "passive": 15,
+            "languages": [
+                "Comprende l'Infernale ma non pu\u00f2 parlare"
+            ],
+            "trait": [
+                {
+                    "name": "Pelle Incandescente",
+                    "entries": [
+                        "Una creatura che tocchi il leopardo o lo colpisca con un attacco in mischia entro 1,5 m da esso subisce 5 ({@damage 1d10}) danni da fuoco. Inoltre, le armi non magiche che colpiscono il leopardo subiscono una penalit\u00e0 permanente e cumulativa di -1 ai tiri per i danni. Se la penalit\u00e0 scende a -5, l'arma \u00e8 distrutta."
+                    ]
+                },
+                {
+                    "name": "Collare di Kevriamor",
+                    "entries": [
+                        "Finch\u00e9 il leopardo indossa il collare di ferro infernale, ha vantaggio ai tiri salvezza contro incantesimi e altri effetti magici, ed \u00e8 immune alle condizioni {@condition charmed||affascinato} e {@condition frightened||spaventato}. Il collare pu\u00f2 essere rimosso solo se la creatura \u00e8 {@condition incapacitated||incapacitata} o tramite un'azione di Interazione con Oggetto superando una prova di Forza (Atletica) {@dc 20} effettuata da una creatura che l'abbia {@condition grappled||afferrata}."
+                    ]
+                },
+                {
+                    "name": "Balzo Predatorio",
+                    "entries": [
+                        "Se il leopardo si muove di almeno 6 m in linea retta verso una creatura e poi la colpisce con un attacco di artigli nello stesso turno, quel bersaglio deve superare un tiro salvezza su Forza {@dc 15} o cadere {@condition prone||prono}. Se il bersaglio \u00e8 {@condition prone||prono}, il leopardo pu\u00f2 effettuare un attacco di morso come azione bonus contro di esso."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattacco",
+                    "entries": [
+                        "Il leopardo effettua tre attacchi: uno con il morso e due con gli artigli."
+                    ]
+                },
+                {
+                    "name": "Morso",
+                    "entries": [
+                        "{@atk mw} {@hit 7} al tiro per colpire, portata 1,5 m, un bersaglio. {@h}13 ({@damage 2d8 + 4}) danni perforanti pi\u00f9 4 ({@damage 1d8}) danni da fuoco. Se il bersaglio \u00e8 una creatura, \u00e8 {@condition grappled||afferrato} (Classe Difficolt\u00e0 per sfuggire {@dc 15})."
+                    ]
+                },
+                {
+                    "name": "Artigli",
+                    "entries": [
+                        "{@atk mw} {@hit 7} al tiro per colpire, portata 1,5 m, un bersaglio. {@h}11 ({@damage 2d6 + 4}) danni taglienti pi\u00f9 4 ({@damage 1d8}) danni da fuoco."
+                    ]
+                },
+                {
+                    "name": "Alito di Cenere Soffocante {@recharge 5}",
+                    "entries": [
+                        "Il leopardo esala fumo nero e braci in un cono di 4,5 m. Ogni creatura in quell'area deve effettuare un tiro salvezza su Intelligenza {@dc 14}. Se lo fallisce, la creatura subisce 7 ({@damage 2d6}) danni da fuoco e non pu\u00f2 lanciare incantesimi che richiedano componenti verbali fino alla fine del suo turno successivo, poich\u00e9 i polmoni e la gola sono riempiti di cenere infernale. Se lo supera, subisce met\u00e0 dei danni e non subisce l'effetto aggiuntivo."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Scatto Rovente",
+                    "entries": [
+                        "Il leopardo pu\u00f2 usare l'azione di Scatto o Disimpegno come azione bonus. Quando lo fa, lascia una scia di fiamme dietro di s\u00e9; ogni creatura che si trovi entro 1,5 m dal percorso compiuto dal leopardo in questo turno deve superare un tiro salvezza su Destrezza {@dc 14} o subire 5 ({@damage 1d10}) danni da fuoco."
+                    ]
+                }
+            ],
+            "fluff": {
+                "name": "Leopardo di Fiamme Soggiogato",
+                "source": "DunForge",
+                "entries": [
+                    "Una fiera maestosa avvolta in fiamme perenni, i cui occhi ardono di una sottomissione innaturale. Il collare che stringe il suo collo pulsa di rune infernali, legandola indissolubilmente alla volont\u00e0 di Kevriamor.",
+                    {
+                        "type": "entries",
+                        "name": "Tattiche",
+                        "entries": [
+                            "Il leopardo usa la sua mobilit\u00e0 per aggirare i combattenti in prima linea, puntando direttamente agli incantatori. Usa il Soffio di Cenere per neutralizzare la capacit\u00e0 di lancio degli incantesimi dei maghi e poi li blocca a terra con il Morso e il Balzo Predatorio. Se circondato, usa Scatto Rovente per riposizionarsi infliggendo danni collaterali."
+                        ]
+                    }
+                ]
+            },
+            "hasFluff": true
+        },
+        {
+            "name": "Minotauro dell'Archivio Soggiogato",
+            "source": "DunForge",
+            "size": [
+                "H"
+            ],
+            "type": "mostruosit\u00e0",
+            "cr": "9",
+            "alignment": [
+                "L",
+                "E"
+            ],
+            "ac": [
+                {
+                    "ac": 16,
+                    "from": [
+                        "natural armor"
+                    ]
+                }
+            ],
+            "hp": {
+                "average": 184,
+                "formula": "16d12 + 80"
+            },
+            "speed": {
+                "walk": 50
+            },
+            "str": 22,
+            "dex": 12,
+            "con": 20,
+            "int": 8,
+            "wis": 16,
+            "cha": 8,
+            "save": {
+                "str": "+10",
+                "con": "+9",
+                "wis": "+7"
+            },
+            "skill": {
+                "athletics": "+14",
+                "intimidation": "+3",
+                "perception": "+7"
+            },
+            "resist": [
+                {
+                    "special": "Contundente, perforante e tagliente da armi non magiche"
+                }
+            ],
+            "immune": [
+                "thunder"
+            ],
+            "conditionImmune": [
+                "charmed",
+                "frightened",
+                {
+                    "special": "Qualsiasi effetto di alterazione, suggestione o controllo mentale grazie al Collare del Soggiogamento"
+                }
+            ],
+            "senses": [
+                "darkvision 60 ft."
+            ],
+            "passive": 17,
+            "languages": [
+                "Infernal",
+                "Abyssal",
+                "comprende il Comune ma non parla"
+            ],
+            "trait": [
+                {
+                    "name": "Collare del Soggiogamento in Adamantio",
+                    "entries": [
+                        "Il minotauro indossa un massiccio collare magico. \u00c8 immune alla condizione {@condition charmed||Affascinato}, {@condition frightened||Spaventato} e a qualsiasi effetto che forzi la sua volont\u00e0 (es. Suggestione o Controllare Mostri). Ogni volta che una creatura tenta di soggiogarlo mentalmente o applicargli tali condizioni, il collare reagisce scatenando l'ira del contratto di Kevriamor: l'incantatore subisce 10 ({@damage 3d6}) danni psichici e deve superare un tiro salvezza su Costituzione con {@dc 17} o perdere la concentrazione su qualsiasi incantesimo in corso."
+                    ]
+                },
+                {
+                    "name": "Carica Inarrestabile e Demolitrice",
+                    "entries": [
+                        "Durante un'azione di Scatto o la Carica Tonante Devastante, il minotauro pu\u00f2 muoversi attraverso oggetti solidi non magici, mobili e muri dell'archivio, distruggendoli al suo passaggio. Le aree distrutte in questo modo diventano terreno difficile. Ha inoltre vantaggio su qualsiasi tiro salvezza o prova per evitare di essere {@condition grappled||Afferrato} o {@condition restrained||Trattenuto}."
+                    ]
+                },
+                {
+                    "name": "Memoria Labirintica Infallibile",
+                    "entries": [
+                        "Il minotauro ricorda perfettamente qualsiasi percorso all'interno dell'archivio e ha vantaggio alle prove di Saggezza (Percezione) per individuare creature nascoste dietro gli scaffali."
+                    ]
+                }
+            ],
+            "action": [
+                {
+                    "name": "Multiattacco",
+                    "entries": [
+                        "Il minotauro effettua due attacchi: uno con l'Ascia Bipenne dell'Archivio e uno con l'Incornata, oppure due attacchi con l'Ascia."
+                    ]
+                },
+                {
+                    "name": "Ascia Bipenne dell'Archivio",
+                    "entries": [
+                        "Attacco con Arma da Mischia: {@hit 10} al tiro per colpire, portata 3m, un bersaglio. Colpisce: 25 ({@damage 3d12 + 6}) danni taglienti pi\u00f9 4 ({@damage 1d8}) danni da tuono."
+                    ]
+                },
+                {
+                    "name": "Incornata",
+                    "entries": [
+                        "Attacco con Arma da Mischia: {@hit 10} al tiro per colpire, portata 3m, un bersaglio. Colpisce: 19 ({@damage 3d8 + 6}) danni perforanti. Se il bersaglio \u00e8 una creatura, deve superare un tiro salvezza su Forza con {@dc 18} o essere spinto fino a 3 metri di distanza."
+                    ]
+                },
+                {
+                    "name": "Carica Tonante Devastante {@recharge 5}",
+                    "entries": [
+                        "Il minotauro scatta in avanti fino alla sua velocit\u00e0 in linea retta. Pu\u00f2 attraversare ostacoli e creature. Ogni creatura sulla linea deve effettuare un tiro salvezza su Destrezza con {@dc 18}. Se fallisce, subisce 22 ({@damage 4d10}) danni contundenti e 22 ({@damage 4d10}) danni da tuono, viene spinta di 4,5 metri in una direzione a scelta del minotauro e cade {@condition prone||Prona}. Se ha successo, subisce la met\u00e0 dei danni, non viene spinta n\u00e9 buttata a terra. I muri e gli scaffali lungo la linea esplodono in piogge di legno e pergamena."
+                    ]
+                }
+            ],
+            "bonus": [
+                {
+                    "name": "Sguardo di Kevriamor",
+                    "entries": [
+                        "Il minotauro fissa una creatura che pu\u00f2 vedere entro 18 metri. La creatura deve superare un tiro salvezza su Saggezza con {@dc 15} o cadere preda della condizione {@condition frightened||Spaventato} fino all'inizio del turno successivo del minotauro. Mentre \u00e8 {@condition frightened||spaventata} in questo modo, la creatura ha la sua velocit\u00e0 ridotta a 0."
+                    ]
+                }
+            ],
+            "reaction": [
+                {
+                    "name": "Schiacciamento Inesorabile",
+                    "entries": [
+                        "Quando una creatura entro 3 metri dal minotauro si alza dalla condizione {@condition prone||Prona} o tenta di Disimpegnarsi, il minotauro pu\u00f2 effettuare un attacco di Incornata contro di essa. Se colpisce, la velocit\u00e0 del bersaglio scende a 0 per quel turno."
+                    ]
+                }
+            ],
+            "legendary": [
+                {
+                    "name": "Passo Demolitore (Costa 1 Azione)",
+                    "entries": [
+                        "Il minotauro si muove fino a met\u00e0 della sua velocit\u00e0 distruggendo mobili o scaffali sul suo percorso, senza provocare attacchi di opportunit\u00e0."
+                    ]
+                },
+                {
+                    "name": "Spazzata con Ascia (Costa 1 Azione)",
+                    "entries": [
+                        "Il minotauro effettua un attacco con l'Ascia Bipenne dell'Archivio."
+                    ]
+                },
+                {
+                    "name": "Ruggito Sconquassante (Costa 2 Azioni)",
+                    "entries": [
+                        "Il minotauro emette un muggito terrificante caricato di energia tonante. Tutte le creature in un'area a cono di 9 metri devono effettuare un tiro salvezza su Costituzione con {@dc 17}. In caso di fallimento, subiscono 14 ({@damage 4d6}) danni da tuono e sono Afflitte dalla condizione {@condition stunned||Stordito} fino all'inizio del prossimo turno del minotauro. In caso di successo, subiscono la met\u00e0 dei danni e non sono {@condition stunned||stordite}."
+                    ]
+                }
+            ],
+            "legendaryActions": 3,
+            "fluff": {
+                "name": "Minotauro dell'Archivio Soggiogato",
+                "source": "DunForge",
+                "entries": [
+                    "Una colossale mostruosit\u00e0 taurina alta pi\u00f9 di sei metri, i cui muscoli fremono di scariche elettriche latenti. Attorno al possente collo in tensione indossa il Collare del Soggiogamento: un enorme e infrangibile anello di adamantio forgiato all'inferno che lo vincola magicamente alla protezione eterna degli archivi di Kevriamor, rendendolo al contempo un burattino insensibile alle intrusioni mentali esterne.",
+                    {
+                        "type": "entries",
+                        "name": "Tattiche",
+                        "entries": [
+                            "L'obiettivo del Minotauro \u00e8 difendere i contratti primari annientando brutalmente gli intrusi. Inizia gli scontri ignorando coperture, usando la 'Carica Tonante Devastante' per schiantarsi attraverso muri e ostacoli direttamente contro gruppi compatti, infliggendo ingenti danni da tuono e buttandoli {@condition prone||proni}. Subito dopo sfrutta 'Sguardo di Kevriamor' o il 'Ruggito Sconquassante' per paralizzare con Paura e Stordimento incantatori o tiratori, riducendo le azioni del gruppo. Con le azioni dell'antro ('Muri Scorrevoli') divide attivamente i guaritori dai compagni in mischia, isolando i bersagli isolati o vulnerabili a cui azzerer\u00e0 i movimenti con la sua reazione per finirli a colpi di ascia."
+                        ]
+                    },
+                    {
+                        "type": "entries",
+                        "name": "Azioni dell'Antro",
+                        "entries": [
+                            "Al conteggio di iniziativa 20 (perdendo i pareggi in iniziativa), la creatura esegue un'azione dell'antro per causare uno dei seguenti effetti; non puo usare lo stesso effetto due round di fila:",
+                            {
+                                "type": "list",
+                                "style": "list-hang-notitle",
+                                "items": [
+                                    {
+                                        "type": "item",
+                                        "name": "Muri di Contratti Scorrevoli (Iniziativa 20)",
+                                        "entries": [
+                                            "Il minotauro attiva un meccanismo segreto. Fino a due sezioni di mura-scaffale (larghe 6 metri e alte 6 metri) si spostano improvvisamente di 9 metri, cambiando la disposizione dell'area. Questo pu\u00f2 isolare i membri del gruppo, bloccare le linee di tiro e coprire i passaggi."
+                                        ]
+                                    }
+                                ]
+                            }
                         ]
                     }
                 ]
